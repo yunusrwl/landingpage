@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">success Page</title>
+    <link rel="stylesheet" href="success.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&dispplay=swap"
+    />
+    <!--<script>
+        setTimeout(function(){
+        location.href = './status';
+        },10000)
+    </script>-->
+  </head>
+  <body>
+    <div id="success-box">
+      <span class="top"></span>
+      <span class="kanan"></span>
+      <span class="bottom"></span>
+      <span class="left"></span>
+      <div class="dot"></div>
+      <div class="dot two"></div>
+      <div class="dot three"></div>
+      <div class="line"></div>
+      <div class="face">
+        <div class="eye"></div>
+        <div class="eye right"></div>
+        <div class="mouth happy"></div>
+      </div>
+      <div class="shadow scale"></div>
+      <div class="message"><h1 class="alert">Success!</h1></div>
+      <div class="notif">Selamat Datang, Broo</div>
+      <button class="btn" id="login" onclick="status();">
+        <a>CHEK STATUS</a>
+      </button>
+    </div>
+  </body>
+
+  <script>
+    function status() {
+      console.log(" go to status");
+      window.location.href = "./status.html";
+    }
+  </script>
+
+  <script type="text/javascript">
+    document.getElementById("title").innerHTML =
+      window.location.hostname + " > success";
+    document.getElementById("dname").innerHTML = window.location.hostname;
+  </script>
+</html>
